@@ -29,6 +29,7 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 |---------|---------------------------------------|---|
 | 17      | Introdução da seção                   | ✔️ |
 | 18      | Sobre o problema do chalk             | ✔️ |
-| 19      | O que são modulos                     | ✔️ |
+| 19      | O que são modulos?                    | ✔️ |
 | 20      | Módulo interno                        | ✔️ |
 | 21      | Import e Export                       | ✔️ |
+| 22      | Sobre os Core Modules                 | ✔️ |
