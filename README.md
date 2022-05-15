@@ -19,3 +19,4 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 | 09      | Executando o Node.js          | ✔️ |
 | 10      | O primeiro programa           | ✔️ |
 | 11      | Utilizando um modulo          | ✔️ |
+| 12      | Repositório do curso          | ✔️ |
