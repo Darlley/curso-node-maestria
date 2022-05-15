@@ -27,5 +27,6 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 
 | Seção 2 | Fundamentos de Node.js                | ✔️ |
 |---------|---------------------------------------|---|
-| 01      | Introdução da seção                   | ✔️ |
-| 02      | Sobre o problema do chalk             | ✔️ |
+| 17      | Introdução da seção                   | ✔️ |
+| 18      | Sobre o problema do chalk             | ✔️ |
+| 19      | O que são modulos                     | ✔️ |
