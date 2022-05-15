@@ -20,6 +20,12 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 | 10      | O primeiro programa                   | ✔️ |
 | 11      | Utilizando um modulo                  | ✔️ |
 | 12      | Repositório do curso                  | ✔️ |
-| 13      | Faça download dos arquivos do curso0  | - |
+| 13      | Faça download dos arquivos do curso0  | ✔️ |
 | 14      | Como tirar o melhor proveiro do curso | ✔️ |
-| 15      | Slides do curso                       | - |
+| 15      | Slides do curso                       | ✔️ |
+| 16      | Conclusão da seção                    | ✔️ |
+
+| Seção 2 | Fundamentos de Node.js                | ✔️ |
+|---------|---------------------------------------|---|
+| 01      | Introdução da seção                   | ✔️ |
+| 02      | Sobre o problema do chalk             | ✔️ |
