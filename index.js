@@ -1,17 +1,16 @@
 const minimist = require('minimist')
 
+// modulo externo
+
+// mmodulo interno
+const somar = require('./soma').soma
+
+
 const args = minimist(process.argv.slice(2))
 
 console.log(args)
 
-const nome = args['nome']
+const a = parseInt(args["a"])
+const b = parseInt(args["b"])
 
-console.log(nome)
-
-const profissao = args['profissao']
-
-console.log(profissao)
-
-console.log(`O ${nome} é ${profissao}`)
-
-// node index.js --nome=Darlley --profissao=Desenvolvedo
+somar(a,b)
