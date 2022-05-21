@@ -37,3 +37,4 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 | 25      | Algo prático com argumentos           | ✔️ |
 | 26      | Explorando o console                  | ✔️ |
 | 27      | Melhorando a visualização             | ✔️ |
+| 28      | Lendo input de dados                  | ✔️ |
