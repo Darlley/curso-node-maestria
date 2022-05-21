@@ -34,3 +34,4 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 | 21      | Import e Export                       | ✔️ |
 | 22      | Sobre os Core Modules                 | ✔️ |
 | 24      | Módulo Externo                        | ✔️ |
+| 25      | Algo prático com argumentos           | ✔️ |
