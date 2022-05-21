@@ -35,3 +35,4 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 | 22      | Sobre os Core Modules                 | ✔️ |
 | 24      | Módulo Externo                        | ✔️ |
 | 25      | Algo prático com argumentos           | ✔️ |
+| 26      | Explorando o console                  | ✔️ |
