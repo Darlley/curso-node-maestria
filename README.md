@@ -49,3 +49,4 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 | Seção 3 | Node Core Modules na prática          | ❌ |
 |---------|---------------------------------------|---|
 | 35      | Introdução da seção                   | ✔️ |
+| 36      | Introdução aos Core Modules           | ✔️ |
