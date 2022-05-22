@@ -52,3 +52,4 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 | 36      | Introdução aos Core Modules           | ✔️ |
 | 37      | Módulo http                           | ✔️ |
 | 38      | Parando a execução do servidor        | ✔️ |
+| 39      | Retornando HTML                       | ✔️ |
