@@ -40,3 +40,4 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 | 28      | Lendo input de dados                  | ✔️ |
 | 29      | Abstração de Input                    | ✔️ |
 | 30      | Event Loop                            | ✔️ |
+| 31      | Event Emitter                         | ✔️ |
