@@ -53,3 +53,4 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 | 37      | Módulo http                           | ✔️ |
 | 38      | Parando a execução do servidor        | ✔️ |
 | 39      | Retornando HTML                       | ✔️ |
+| 40      | Atualização da aplicação              | ✔️ |
