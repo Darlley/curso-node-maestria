@@ -55,3 +55,4 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 | 39      | Retornando HTML                       | ✔️ |
 | 40      | Atualização da aplicação              | ✔️ |
 | 41      | Método url                            | ✔️ |
+| 42      | Módulo http com módulo url            | ✔️ |

@@ -1,9 +1,29 @@
+const http = require('http')
 const url = require('url')
-const address = "https://www.google.com/search?q=google"
-const parsUrl = new url.URL(address)
+const port = 3000
 
-console.log(parsUrl.host)
-console.log(parsUrl.pathname)
-console.log(parsUrl.search)
-console.log(parsUrl.searchParams)
-console.log(parsUrl.searchParams.get('q'))
+const form = `
+<form method="GET">
+    <input type="text" name="first" id="">
+    <button type="submit">Enviar</button>
+</form>
+`
+
+const server = http.createServer((req, res) => {
+  const urlInfo = url.parse(req.url, true)
+  const name = urlInfo.query.first
+
+  res.statusCode = 200
+  res.setHeader("Content-Type", "text/html")
+  
+  if(!name){
+    res.end(form)
+    return
+  }
+
+  res.end(`<h1>Seja bem vindo, ${name}</h1>`)
+
+})
+server.listen(port, () => {
+  console.log("Servidor http://localhost:%s", port)
+})
