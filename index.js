@@ -1,9 +1,16 @@
 const http = require('http')
 const port = 3000
 
+const code = `
+<div>
+  <h1>Core Modules</h1>
+</div>
+`
+
 const server = http.createServer((req,res) => {
-  res.write("Core Module http")
-  res.end()
+  res.statusCode = 200
+  res.setHeader('Content-Type', 'text/html')
+  res.end(code)
 })
 
 server.listen(port, () => {
