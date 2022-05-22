@@ -44,7 +44,7 @@ Curso na Udemy ["Node.js do Zero a Maestria com diversos Projetos"](https://www.
 | 32      | Sync e Async                          | ✔️ |
 | 33      | Erros no Node.js                      | ✔️ |
 | 34      | Conclusão da seção                    | ✔️ |
-| Tarefa  | Trabalhando com módulos               | ✔️ |
+| Tarefa  | [Trabalhando com módulos](https://github.com/Darlley/curso-node-maestria/tree/main/tarefas/modulo02)   | ✔️ |
 
 | Seção 3 | Node Core Modules na prática          | ❌ |
 |---------|---------------------------------------|---|
