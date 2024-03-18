@@ -13,12 +13,13 @@ const server = http.createServer((req, res) => {
       return res.end();
     });
   }else{
-    fs.writeFile("arquivo.txt", name, (err, data) => {
+    const nameNewLine = name + "\n"
+    fs.appendFile("arquivo.txt", nameNewLine, (err, data) => {
       res.writeHead(302, {
         Location: "/"
       })
+      return res.end();
     })
-    return res.end();
   }
 
 });
