@@ -1,29 +1,28 @@
-const http = require('http')
-const url = require('url')
-const port = 3000
-
-const form = `
-<form method="GET">
-    <input type="text" name="first" id="">
-    <button type="submit">Enviar</button>
-</form>
-`
+const fs = require('fs');
+const http = require('http');
+const port = 3000;
 
 const server = http.createServer((req, res) => {
-  const urlInfo = url.parse(req.url, true)
-  const name = urlInfo.query.first
+  const urlInfo = require('url').parse(req.url, true);
+  const name = urlInfo.query.name
 
-  res.statusCode = 200
-  res.setHeader("Content-Type", "text/html")
-  
   if(!name){
-    res.end(form)
-    return
+    fs.readFile('mensagem.html', (err, data) => {
+      res.writeHead(200, { 'Content-Type': 'text/html' });
+      res.write(data);
+      return res.end();
+    });
+  }else{
+    fs.writeFile("arquivo.txt", name, (err, data) => {
+      res.writeHead(302, {
+        Location: "/"
+      })
+    })
+    return res.end();
   }
 
-  res.end(`<h1>Seja bem vindo, ${name}</h1>`)
+});
 
-})
 server.listen(port, () => {
-  console.log("Servidor http://localhost:%s", port)
-})
+  console.log('Servidor http://localhost:%s', port);
+});
