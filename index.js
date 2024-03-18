@@ -1,10 +1,13 @@
 const fs = require('fs')
 
-fs.unlink("arquivo.txt", (err) => {
+const file_name1 = "arquivo.txt" 
+const file_name2 = "new.txt"
+
+fs.rename(file_name1, file_name2, (err) => {
   if(err){
     console.log(err)
     return 
   }
 
-  console.log("Arquivo deletado")
+  console.log("Arquivo " + file_name1 + " renomeado para " + file_name2 + "!")
 })
