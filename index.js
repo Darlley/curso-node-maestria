@@ -1,13 +1,26 @@
-const fs = require('fs')
+const fs = require('fs');
+const http = require('http');
+const url = require('url');
 
-const file_name1 = "arquivo.txt" 
-const file_name2 = "new.txt"
+const port = 3000;
 
-fs.rename(file_name1, file_name2, (err) => {
-  if(err){
-    console.log(err)
-    return 
+const server = http.createServer((req, res) => {
+  const q = url.parse(req.url, true);
+  const filename = q.pathname.substring(1);
+
+  if (filename.includes('html')) {
+    if (fs.existsSync(filename)) {
+      fs.readFile(filename, (err, data) => {
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.write(data);
+        return res.end();
+      });
+    } else {
+      console.log('404')
+    }
   }
+});
 
-  console.log("Arquivo " + file_name1 + " renomeado para " + file_name2 + "!")
+server.listen(port, () => {
+  console.log("http://localhost:" + port)
 })
