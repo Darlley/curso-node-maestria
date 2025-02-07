@@ -4,7 +4,8 @@
   "description": "Curso na Udemy [\"Node.js do Zero a Maestria com diversos Projetos\"](https://www.udemy.com/course/nodejs-do-zero-a-maestria-com-diversos-projetos/) (Criado por Matheus Battisti)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/Darlley/curso-node-maestria#readme",
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
