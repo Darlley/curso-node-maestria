@@ -1,23 +1,18 @@
 const express = require('express')
+const path = require('node:path')
 const app = express()
 
 const $_PORT = 3000
+const basePath = path.join(__dirname, 'templates')
 
-const checkAuthMiddleware = function(req, res, next) {
-  req.authStatus = true
-  if(req.authStatus){
-    console.log('esta logado')
-    next()
-  } else {
-    console.log("Não esta logado, faça o login para continuar")
-    next()
-  }
-}
-
-app.use(checkAuthMiddleware)
+app.get('/users/:id', (req, res) => {
+  const id = req.params.id
+  console.log(`Estamos buscando pelo user ID: ${id}`)
+  res.sendFile(`${basePath}/users.html`)
+})
 
 app.get('/', (req, res) => {
-  res.send('Olá mundo!')
+  res.sendFile(`${basePath}/index.html`)
 })
 
 app.listen($_PORT, () => {
