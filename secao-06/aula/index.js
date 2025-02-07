@@ -21,6 +21,10 @@ app.get('/', (req, res) => {
   res.sendFile(`${basePath}/index.html`)
 })
 
+app.use((req, res, next) => {
+  res.status(404).sendFile(`${basePath}/404.html`)
+})
+
 app.listen($_PORT, () => {
   console.log(`App running in http://localhost:${$_PORT}`)
 })
