@@ -7,8 +7,19 @@ const port = 3000;
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
+const auth = true
+
 app.get('/', (req, res) => {
-    res.render('home');
+
+  res.render('home', { auth });
+});
+
+app.get('/dashboard', (req, res) => {
+  const user = {
+    name: "Darlley 2"
+  }
+
+  res.render('dashboard', { user, auth });
 });
 
 app.listen(port, () => {

@@ -1,1 +1,7 @@
-<h1>Home</h1>
+<h1>HOMEPAGE</h1>
+
+{{#if auth}}
+<p>Você está autenticado! Acesse o <a href="/dashboard">painel de controle</a>.</p>
+{{else}}
+<p>Não autenticado</p>
+{{/if}}

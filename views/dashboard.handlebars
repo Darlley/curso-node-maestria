@@ -1,0 +1,16 @@
+{{#if auth}}
+<div>
+  <h1>Dashboard</h1>
+  <p>Bem vindo ao seu painel de controle</p>
+</div>
+
+<div>
+  <p>Nome completo: {{user.name}}</p>
+  <p>Idade: {{user.age}}</p>
+</div>
+{{else}}
+<div>
+  <h1>Dashboard</h1>
+  <p>Voce precisa estar logado para ver esse conteudo.</p>
+</div>
+{{/if}}
