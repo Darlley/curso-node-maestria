@@ -1,0 +1,25 @@
+{
+  "name": "curso-node-maestria",
+  "version": "1.0.0",
+  "description": "Curso na Udemy [\"Node.js do Zero a Maestria com diversos Projetos\"](https://www.udemy.com/course/nodejs-do-zero-a-maestria-com-diversos-projetos/) (Criado por Matheus Battisti)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js localhost 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darlley/curso-node-maestria.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darlley/curso-node-maestria/issues"
+  },
+  "homepage": "https://github.com/Darlley/curso-node-maestria#readme",
+  "dependencies": {
+    "express": "4.17.1",
+    "express-handlebars": "5.3.3",
+    "nodemon": "2.0.12"
+  }
+}
