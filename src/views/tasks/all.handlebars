@@ -1,1 +1,11 @@
 <h1>Tasks</h1>
+
+<ul class="task-list">
+  {{#each tasks}}
+  <li class="task-item">
+    <h2 class="task-title">{{this.title}}</h2>
+    <p class="task-description">{{this.description}}</p>
+    <span class="task-status">{{#if this.done}}Concluída{{else}}Pendente{{/if}}</span>
+  </li>
+  {{/each}}
+</ul>

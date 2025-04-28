@@ -67,3 +67,39 @@ h1 {
 .btn-primary:hover {
   background-color: #0056b3;
 }
+
+/*  TASKS  */
+.task-list {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o padding padrão */
+}
+
+.task-item {
+  border: 1px solid #ccc; /* Borda ao redor de cada tarefa */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 15px; /* Espaçamento interno */
+  margin-bottom: 10px; /* Espaçamento entre as tarefas */
+  background-color: #f9f9f9; /* Cor de fundo */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.task-item:hover {
+  background-color: #e9ecef; /* Cor de fundo ao passar o mouse */
+}
+
+.task-title {
+  font-size: 1.5em; /* Tamanho da fonte do título */
+  margin: 0; /* Remove margens padrão */
+  color: #333; /* Cor do texto do título */
+}
+
+.task-description {
+  font-size: 1em; /* Tamanho da fonte da descrição */
+  color: #666; /* Cor do texto da descrição */
+  margin: 5px 0; /* Margem vertical */
+}
+
+.task-status {
+  font-weight: bold; /* Negrito para o status */
+  color: #007bff; /* Cor do status */
+}
